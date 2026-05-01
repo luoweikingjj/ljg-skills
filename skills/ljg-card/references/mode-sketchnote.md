@@ -67,6 +67,33 @@
 
 **削掉它**：自我陶醉的话术覆盖了真正的发明感。
 
+### 公理 6 · 中文母语表达
+
+文字必须像中文人说话，不像英文翻译过来的中文。
+
+**禁忌（典型翻译腔）**：
+- ✗ 名词化的抽象（"共相被肢解"、"现象学碎片化"、"普遍现象"）
+- ✗ 英式对仗（"两个尺度，一个舞台"、"输入连续，输出不连续"）
+- ✗ 工业短句堆砌（"球瞬间到位。地形慢慢变。两个尺度，一个舞台。"）
+- ✗ 形容词驱动（"突然的、惊人的、深刻的、根本的"）
+- ✗ 被动滥用（"被推到死"、"被肢解"、"被发现"）
+
+**该用**：
+- ✓ 动词驱动（"球稳坐"、"谷塌了"、"它跳了"、"推到塌"）
+- ✓ 具体物件（"水"、"球"、"谷"，而不是 "状态"、"系统"、"势函数"——除非确有必要）
+- ✓ 口语节奏（"它就这么……跳了"、"看着是这样，其实不是"）
+- ✓ 中文自然句式：长句不怕长，短句不怕短，怕的是机械对仗
+
+**检查方法**：每句默念出声。听起来像翻译的、像 wikipedia 中文版的、像论文摘要的——重写。
+
+**对照**：
+- ✗ 「输入连续，输出不连续」 → ✓「慢慢加热，到 100 度突然就开了」
+- ✗ 「共相被肢解」 → ✓「各管各的，谁也不挨谁」
+- ✗ 「状态稳坐在谷里。谷在变。当谷消失，跳变发生。」 → ✓「球稳稳待在谷里。谷慢慢变。谷一塌，球就跳。」
+- ✗ 「不能预测什么时候发生，只能告诉你它的形态」 → 这句可以保留（Thom 原话），但改写时不要模仿这种 prescriptive 句式
+
+**削掉它**：文字成了 wikipedia 中文版的腔调，读完不留痕迹。
+
 ---
 
 ## 步骤 1：读取模板
@@ -135,10 +162,29 @@ Read `assets/sketchnote_template.html`
 - 不是"我打不开它"（被动）
 - 而是"我**故意**不开它"（主动）
 
-转折点必须有"等等——"的停顿感。
+转折点必须有视角翻面的顿挫感。
+
+**mega 字（重要 · 不可写死）**：
+
+mega 是这一刻视角翻转的爆点。它**必须由具体转折决定**，不要默认套"等等——"。
+
+| 候选类型 | 例 | 适用场景 |
+|---------|-----|---------|
+| 停顿词 | 等等—— / 不对 / 慢着 | 当转折是"先暂停，反思" |
+| 动作词 | 翻过来 / 反着看 / 退一步 | 当转折是具体的姿态变化 |
+| 视角词 | 看地形 / 别盯球 / 朝里看 | 当转折是看的对象变了 |
+| 单字爆点 | 翻 / 山 / 反 | 当转折可以浓缩到一个核心字 |
+| 概念词 | 几何—— / 地形—— | 当转折引入一个新词汇（但不能是最终命名） |
+
+**禁忌**：
+- ✗ 默认套"等等——"——这是 AI 偷懒的剧本套路
+- ✗ mega 字与转折内容脱节（比如内容讲"换看的对象"，mega 写"等等"，对不上）
+- ✗ mega 字泄露最终命名（比如概念是"突变理论"，mega 不能写"突变"）
+
+**检查方法**：mega 字读完，读者应该感到这一刻的视角变化。如果它换成"等等"也成立、换成"不对"也成立、换成什么都成立——说明它没紧扣转折，得重写。
 
 输出：
-- **mega**：表达停顿的大字（"等等——"，Serif 200px）+ amber 高亮 highlight 段（仅"等等"二字）
+- **mega**：转折爆点（Serif 200px）+ amber 高亮 highlight 段（核心字 1-3 个）
 - **body**：反向陈述（左栏）
 - **visual**：反向姿态的小图（右栏，球滚山谷之类的简单类比）+ caption
 
@@ -184,7 +230,7 @@ Read `assets/sketchnote_template.html`
 | 1 起点 | feature spread | `.feature` | 米色底 + grid 6fr/6fr，左大图 / 右文字，kicker + Serif 大标题 + italic lead + drop cap body |
 | 2 失败 | margin note | `.note` | 浅米色底 + 窄栏 540px，便签纸感（顶部虚线穿孔），红笔删除线 + scribble + footnote ¹，微旋 0.5deg |
 | 3 失败 | archive label | `.archive` | 全宽 + 黑色印章 stamp（左 168px，含 ✕ 大字）+ 右栏 body + 网格图 + verdict 红色 italic |
-| 4 转折 | cross-page mega | `.cross` | 全宽 + Serif 200px「等等——」+ amber 高亮 + 二栏（文字 / 图） |
+| 4 转折 | cross-page mega | `.cross` | 全宽 + Serif 200px **由内容决定的转折爆点** + amber 高亮 + 二栏（文字 / 图） |
 | 5 顿悟 | hero spread | `.hero` | 蓝色顶边 4px + grid 7fr/5fr，大图（左）+ 右栏 pull quote + drop cap body |
 | 6 命名 | closing page | `.closing` | 米色底 + 双线顶边 + 中心对称 + 巨大 Serif 名 + byline 上下细线 + epilogue |
 
@@ -215,7 +261,7 @@ Read `assets/sketchnote_template.html`
 | **verdict** | archive 结案语 | italic 19px Serif 红色 + 上虚线分隔 |
 | **footnote** | note 脚注 | Mono 13px + ¹ 上标 + 上虚线分隔 |
 | **byline** | closing 出处 | Mono 14px uppercase + letter-spacing 0.18em + 上下细黑线 |
-| **mega** | cross 大字 | Serif 200px + amber 渐变高亮 highlight 段 |
+| **mega** | cross 大字（由内容决定的转折爆点，禁止默认套「等等」） | Serif 200px + amber 渐变高亮 highlight 段（核心字 1-3 个） |
 | **epilogue** | closing 余韵 | italic 26px Serif + `—` 红色破折号前缀 |
 
 不要全用。但 **kicker、drop cap、byline、stamp** 是结构必须项。
@@ -236,15 +282,28 @@ Read `assets/sketchnote_template.html`
 
 **≤ 4 主色**（红 + 蓝 + amber + 中性）。不堆色。**禁止 #000 纯黑**。
 
-### 3.5 边距与节奏
+### 3.5 漫画分镜式的节奏
 
-- 杂志主体每节左右内边距：64px
-- 节与节之间用 border-top + 不同 margin-top 自然分隔（不是 gap: 88px）
-- note 站点错位浮右（`margin: 56px 64px 0 auto`）
-- archive 站点全宽贴边（`margin: 64px 64px 0`）
-- cross 上下大空白（`padding: 96px 64px 84px`）+ margin-top: 64px
-- hero `padding: 72px 64px 64px` + margin-top: 56px
-- closing `padding: 80px 64px 84px` + margin-top: 64px + text-align: center
+借鉴漫画排版：留白不是均匀的——它跟着叙事节奏分配。漫画里关键瞬间放大留白，过渡部分紧凑收缩。AI 默认的"画廊均匀留白"刚好相反：每节都给同样的呼吸空间，结果整张图像 PowerPoint 模板，没有节奏。
+
+**节奏分级**：
+
+| 节 | 弧线角色 | 留白尺度 | 上下 padding | margin-top |
+|----|---------|---------|------------|-----------|
+| feature | 开篇广角 | 中 | 38 / 44 | — |
+| note | 紧凑铺垫 | 小 | 22 / 22 | 24 |
+| archive | 紧凑铺垫 | 小 | 22 / 24 | 24 |
+| cross | 转场爆点 | 大（mega 撑场） | 64 / 60 | 30 |
+| hero | 顿悟特写 | 中偏小 | 52 / 48 | 32 |
+| closing | 终格静默 | 大（让命名沉淀） | 60 / 64 | 32 |
+
+**原则**：
+- 节与节之间用 border-top + margin-top 区分，margin-top 必须**因角色不同**（不是统一 64px）
+- block 内部 padding 全部偏紧——head-margin 12/16，body p+p 8，ask 14
+- 留白集中在 cross + closing 两个"放大"瞬间，其他从快节奏滚过去
+- magazine-head 也要紧凑：44 / 30，不要让大标题独占一屏
+
+**禁忌**：6 个节都是 60-80px margin-top 的均匀间距。如果 self-check 时发现节奏图是直线，回去重排——这是画廊陈列，不是漫画分镜。
 
 ---
 
@@ -275,7 +334,7 @@ Read `assets/sketchnote_template.html`
 
 /* magazine head */
 .magazine-head {
-  padding: 60px 64px 44px;
+  padding: 44px 64px 30px;
   border-bottom: 2px solid var(--ink-strong);
   position: relative;
 }
@@ -290,7 +349,7 @@ Read `assets/sketchnote_template.html`
   color: var(--ink-light);
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  margin-bottom: 36px; padding-bottom: 14px;
+  margin-bottom: 24px; padding-bottom: 12px;
   border-bottom: 1px solid var(--rule);
 }
 .top-bar .left { display: flex; align-items: center; gap: 18px; }
@@ -322,43 +381,43 @@ Read `assets/sketchnote_template.html`
   padding: 5px 10px 4px; font-weight: 700; letter-spacing: 0.12em;
 }
 .kicker .rule { width: 36px; height: 1px; background: var(--ink-strong); }
-.head-serif { font: 700 60px/1.05 var(--serif); margin: 18px 0 22px; letter-spacing: -0.018em; color: var(--ink-strong); }
-.head-sans { font: 900 42px/1.12 var(--sans); margin: 14px 0; letter-spacing: -0.012em; color: var(--ink-strong); }
-.body-serif p { font: 400 22px/1.65 var(--serif); }
-.body-serif p + p { margin-top: 12px; }
+.head-serif { font: 700 56px/1.05 var(--serif); margin: 12px 0 16px; letter-spacing: -0.018em; color: var(--ink-strong); }
+.head-sans { font: 900 40px/1.12 var(--sans); margin: 10px 0 12px; letter-spacing: -0.012em; color: var(--ink-strong); }
+.body-serif p { font: 400 22px/1.6 var(--serif); }
+.body-serif p + p { margin-top: 8px; }
 .body-sans p { font: 400 21px/1.6 var(--sans); }
-.body-sans p + p { margin-top: 10px; }
+.body-sans p + p { margin-top: 6px; }
 .body em { font-style: normal; font-weight: 700; color: var(--ink-strong); }
-.ask { font: 600 32px/1.3 var(--hand); color: var(--red); margin-top: 22px; display: block; }
+.ask { font: 600 30px/1.3 var(--hand); color: var(--red); margin-top: 14px; display: block; }
 .drop-cap > p:first-child::first-letter {
   float: left;
-  font: 700 96px/0.84 var(--serif);
+  font: 700 84px/0.84 var(--serif);
   color: var(--ink-strong);
-  margin: 4px 14px -6px 0;
+  margin: 4px 12px -4px 0;
 }
 
-/* feature */
+/* feature · 开篇广角，留白中等 */
 .feature {
-  padding: 56px 64px 60px;
+  padding: 38px 64px 44px;
   background: var(--paper);
   border-bottom: 1px solid var(--rule);
   display: grid;
   grid-template-columns: 6fr 6fr;
-  gap: 44px;
+  gap: 32px;
   align-items: start;
 }
 .feature .lead {
-  font: italic 400 23px/1.45 var(--serif);
-  margin-bottom: 22px;
+  font: italic 400 22px/1.45 var(--serif);
+  margin-bottom: 16px;
   padding: 0 0 0 18px;
   border-left: 2px solid var(--red);
 }
 
-/* note */
+/* note · 紧凑铺垫 */
 .note {
-  margin: 56px 64px 0 auto;
+  margin: 24px 64px 0 auto;
   max-width: 540px;
-  padding: 28px 30px 28px 32px;
+  padding: 22px 26px 22px 28px;
   background: #FFFBF1;
   border: 1px solid rgba(120,110,80,0.32);
   border-left: 4px solid var(--red);
@@ -396,44 +455,44 @@ Read `assets/sketchnote_template.html`
 }
 .note .footnote .mark { color: var(--red); font-weight: 700; }
 
-/* archive */
+/* archive · 紧凑铺垫 */
 .archive {
-  margin: 64px 64px 0;
+  margin: 24px 64px 0;
   background: var(--bg);
   border-top: 2px solid var(--ink-strong);
   border-bottom: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 168px 1fr;
+  grid-template-columns: 156px 1fr;
   align-items: stretch;
 }
 .archive .stamp {
   background: var(--ink-strong); color: var(--bg);
-  padding: 28px 18px;
+  padding: 22px 16px;
   font: 700 12px/1.4 var(--mono);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   text-align: center;
-  display: flex; flex-direction: column; justify-content: center; gap: 10px;
+  display: flex; flex-direction: column; justify-content: center; gap: 8px;
 }
 .archive .stamp .label { border: 1px solid rgba(255,255,255,0.45); padding: 4px 6px; }
-.archive .stamp .x { font: 700 64px/1 var(--serif); color: #C85042; }
-.archive .body-area { padding: 26px 34px 30px; }
+.archive .stamp .x { font: 700 56px/1 var(--serif); color: #C85042; }
+.archive .body-area { padding: 22px 28px 24px; }
 .archive .verdict {
-  margin-top: 16px; padding-top: 12px;
+  margin-top: 12px; padding-top: 10px;
   border-top: 1px dashed var(--rule);
   font: italic 600 19px/1.4 var(--serif);
   color: var(--red);
 }
 
-/* cross */
+/* cross · 转场爆点（留白偏大让 mega 撑场） */
 .cross {
-  padding: 96px 64px 84px;
+  padding: 64px 64px 60px;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
-  margin-top: 64px;
+  margin-top: 30px;
 }
 .cross .mega {
-  font: 900 200px/0.88 var(--serif);
+  font: 900 180px/0.88 var(--serif);
   color: var(--ink-strong);
   letter-spacing: -0.045em;
 }
@@ -441,83 +500,84 @@ Read `assets/sketchnote_template.html`
   background: linear-gradient(180deg, transparent 60%, var(--amber-soft) 60%, var(--amber-soft) 90%, transparent 90%);
   padding: 0 6px;
 }
-.cross .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: end; margin-top: 28px; }
-.cross .left, .cross .right { border-top: 2px solid var(--ink-strong); padding-top: 20px; }
-.cross .right .caption { font: italic 400 16px/1.45 var(--serif); color: var(--ink-light); margin-top: 12px; padding-left: 10px; border-left: 2px solid var(--amber); }
+.cross .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: end; margin-top: 18px; }
+.cross .left, .cross .right { border-top: 2px solid var(--ink-strong); padding-top: 16px; }
+.cross .right .caption { font: italic 400 16px/1.45 var(--serif); color: var(--ink-light); margin-top: 10px; padding-left: 10px; border-left: 2px solid var(--amber); }
 
-/* hero */
+/* hero · 顿悟特写，中等偏小 */
 .hero {
-  padding: 72px 64px 64px;
+  padding: 52px 64px 48px;
   border-top: 4px solid var(--blue-deep);
-  margin-top: 56px;
+  margin-top: 32px;
   position: relative;
 }
-.hero .layout { display: grid; grid-template-columns: 7fr 5fr; gap: 44px; align-items: start; }
-.hero .visual .caption { font: italic 400 16px/1.45 var(--serif); color: var(--ink-light); margin-top: 14px; padding-left: 12px; border-left: 2px solid var(--blue-deep); }
+.hero .layout { display: grid; grid-template-columns: 7fr 5fr; gap: 32px; align-items: start; }
+.hero .visual .caption { font: italic 400 16px/1.45 var(--serif); color: var(--ink-light); margin-top: 10px; padding-left: 12px; border-left: 2px solid var(--blue-deep); }
 .hero .pull-quote {
-  font: italic 700 38px/1.22 var(--serif);
+  font: italic 700 36px/1.22 var(--serif);
   color: var(--blue-deep);
-  margin: 18px 0 24px;
-  padding: 8px 0 8px 22px;
+  margin: 12px 0 18px;
+  padding: 6px 0 6px 22px;
   border-left: 4px solid var(--blue-deep);
   position: relative;
 }
 .hero .pull-quote::before {
   content: '\201C'; position: absolute;
-  left: 4px; top: -42px;
-  font: 700 100px/1 var(--serif);
+  left: 4px; top: -36px;
+  font: 700 88px/1 var(--serif);
   color: var(--blue-deep); opacity: 0.35;
 }
 
-/* closing */
+/* closing · 终格静默，留白沉淀 */
 .closing {
-  padding: 80px 64px 84px;
+  padding: 60px 64px 64px;
   background: var(--paper);
   border-top: 6px double var(--ink-strong);
-  margin-top: 64px;
+  margin-top: 32px;
   text-align: center;
 }
 .closing .approach {
-  font: italic 400 26px/1.45 var(--serif);
+  font: italic 400 24px/1.45 var(--serif);
   color: var(--ink-light);
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 .closing .mega-name {
   font: 900 144px/0.95 var(--serif);
   color: var(--ink-strong);
   letter-spacing: -0.028em;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .closing .en-name {
-  font: 500 38px/1 var(--sans);
+  font: 500 36px/1 var(--sans);
   color: var(--ink-light);
   letter-spacing: 0.04em;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 }
 .closing .byline {
-  display: flex; justify-content: center; align-items: baseline; gap: 28px;
+  display: flex; justify-content: center; align-items: baseline; gap: 22px;
   font: 600 14px/1.2 var(--mono);
   color: var(--ink-light);
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  padding: 22px 0;
-  margin: 0 auto 32px;
-  max-width: 760px;
+  padding: 18px 0;
+  margin: 0 auto 24px;
+  max-width: 820px;
   border-top: 1px solid var(--ink-strong);
   border-bottom: 1px solid var(--ink-strong);
+  flex-wrap: wrap;
 }
 .closing .byline strong { color: var(--ink-strong); font-weight: 700; letter-spacing: 0.12em; }
 .closing .byline .sep { color: var(--ink-fade); font-weight: 400; }
 .closing .closing-body {
   font: 400 22px/1.7 var(--serif);
   max-width: 760px;
-  margin: 0 auto 30px;
+  margin: 0 auto 22px;
   text-align: left;
 }
 .closing .epilogue {
   font: italic 500 26px/1.45 var(--serif);
   color: var(--ink-strong);
-  margin-top: 24px;
+  margin-top: 18px;
 }
 .closing .epilogue::before { content: '— '; color: var(--red); font-weight: 700; }
 ```
@@ -578,7 +638,8 @@ Read `assets/sketchnote_template.html`
 </section>
 
 <section class="cross">
-  <h2 class="mega"><span class="em">等等</span>——</h2>
+  <!-- mega 字由内容决定（动作词/视角词/单字爆点），禁止默认套「等等——」 -->
+  <h2 class="mega"><span class="em">[转折爆点 1-3 字]</span>[可选后缀如 ——、！]</h2>
   <div class="grid">
     <div class="left">
       <div class="kicker" style="color: var(--amber);"><span class="num" style="background: var(--amber);">04</span>转折</div>
@@ -658,6 +719,8 @@ node assets/capture.js /tmp/ljg_cast_sketchnote_{name}.html ~/Downloads/{name}.p
 - [ ] 公理 3：标题不剧透 + 命名站点最后
 - [ ] 公理 4：现在视角，无"100 年后"等上帝视角
 - [ ] 公理 5：文字克制，无元自指（不出现"你刚才发明了它"等点题语）
+- [ ] 公理 6：中文母语表达——每句默念听是否像中文人说话（无翻译腔、无名词化抽象、无英式对仗、动词驱动）
+- [ ] cross mega 字是叙事自然产生的（不是默认套"等等——"——读者读完应能感到这一刻的视角变化）
 
 ### 视觉项（杂志骨架）
 - [ ] 6 个站点，每个用不同 layout 模具：feature / note / archive / cross / hero / closing
@@ -668,7 +731,7 @@ node assets/capture.js /tmp/ljg_cast_sketchnote_{name}.html ~/Downloads/{name}.p
 - [ ] Station 4 (cross)：「等等——」200px Serif + amber 高亮
 - [ ] Station 5 (hero)：pull-quote 蓝色 + 浮动大引号
 - [ ] Station 6 (closing)：mega-name ≥ 130px + byline 上下细线 + epilogue
-- [ ] 节奏：开阔（feature） → 紧（note） → 紧（archive） → 爆（cross） → 开阔（hero） → 静（closing）
+- [ ] 漫画分镜节奏：feature 中等留白 → note 紧 → archive 紧 → cross 爆（mega 撑场）→ hero 中偏小 → closing 大（沉淀）。6 节 margin-top 不应都相同
 - [ ] 颜色 ≤ 4 主色（红 + 蓝 + amber + 中性）
 - [ ] 无纯黑 #000，标题用 #0F0F0F
 
@@ -703,3 +766,7 @@ node assets/capture.js /tmp/ljg_cast_sketchnote_{name}.html ~/Downloads/{name}.p
 - [2026-05-01] 杂志风排版需要四字族同时在场（Serif/Sans/Mono/Hand）。如果输出全是 Sans，回到 AI 单一字族的均质感。Mono 用于 kicker / num / byline / stamp，Hand 用于 ask / scribble / caption，缺一不可。 (from: 20260501-180500_cast-potential-function-sketchnote)
 - [2026-05-01] 两个失败站点必须形态不同——station 2 用 note（便签批注），station 3 用 archive（档案标签）。两个都用 note 或都用 archive，节奏不出来。 (from: 20260501-180500_cast-potential-function-sketchnote)
 - [2026-05-01] Drop cap 用 `::first-letter` 选第一段第一字。如果 pull quote 在 body 之前，drop cap 不会作用于 pull quote——只作用于其后第一段。这是预期行为。 (from: 20260501-180500_cast-potential-function-sketchnote)
+- [2026-05-01] S1 feature visual SVG 内若把红色批注（如"外面什么也没动"）紧贴主体物（玻璃罩边缘），易造成视觉拥挤。批注应该外移到 SVG 之外的 caption 位置，或保留为 SVG 内极小注解，让主体 visual 保持纯净。 (from: 20260501-181811_cast-agentic-sketchnote)
+- [2026-05-01] 公理 6（中文母语表达）最易触雷——AI 默认写"输入连续，输出不连续"这种英文直译腔。要改成"慢慢加热，到 100 度突然就开了"。检查方法：每句默念听是否像中文人说话；名词化抽象词（"共相""现象学""碎片化"）一律替换成具体动词或具体物件。 (from: refactor-ljg-card-v-mode 2026-05-01)
+- [2026-05-01] cross 模具 mega 字默认套"等等——"是僵硬的剧本套路。mega 必须紧扣具体转折——可以是动作词（"翻过来"）、视角词（"看地形"/"别盯球"）、单字爆点（"翻"/"山"），或保留"等等"如果它真是这个转折的自然语气。检查：换成别的转折词如果也成立，说明它没紧扣，重写。 (from: refactor-ljg-card-v-mode 2026-05-01)
+- [2026-05-01] 留白不能均匀分配。借鉴漫画分镜：feature 中等留白（开篇广角）→ note + archive 紧凑（铺垫快节奏）→ cross 留白偏大（爆点撑场）→ hero 中偏小（顿悟特写）→ closing 留白大（终格沉淀）。如果 6 节 margin-top 都在 60-80px，那是画廊陈列不是漫画分镜，重排。 (from: refactor-ljg-card-v-mode 2026-05-01)
